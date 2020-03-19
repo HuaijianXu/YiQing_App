@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_province"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="省份"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_confirmed"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:text="67799"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_cured"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:text="56002"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_dead"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:text="3"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="55dp"
+        android:layout_height="80dp"
+        android:text="5"
+        android:textSize="20sp" />
+
+</LinearLayout>

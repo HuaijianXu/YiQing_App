@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testnet.MainActivity">
+
+
+<!--    <EditText-->
+<!--    android:id="@+id/et_data_uname"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="请输入开始时间："-->
+<!--    android:text="2020-03-18"/>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_data_upass"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="请输入截止时间："-->
+<!--        android:text="2020-03-19" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="请选择开始时间"
+        android:textSize="50sp" />
+
+    <DatePicker
+        android:id="@+id/et_data_uname"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="请选择截止时间"
+        android:textSize="50sp" />
+
+    <DatePicker
+        android:id="@+id/et_data_upass"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginGet"
+        android:text="爬取（只可获取当天数据）" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginPOST"
+        android:text="查询国内疫情信息" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loginPOST2"
+        android:text="查询海外疫情信息" />
+
+</LinearLayout>
